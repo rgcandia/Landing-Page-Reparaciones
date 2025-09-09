@@ -41,10 +41,9 @@ img {
 header {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 20vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
 }
 
 /* === Oferta === */
@@ -53,9 +52,7 @@ header {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
   gap: 0.5rem;
 }
 
@@ -69,19 +66,8 @@ header {
   color: #ffeb3b;
 }
 
-.btn-cupon {
-  background-color: #00bfa5;
-  color: #1a1a1a;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
 
-.btn-cupon:hover {
-  background-color: #00a68e;
-}
+
 
 /* === Nav Grid === */
 .nav-grid {
@@ -135,34 +121,35 @@ header {
 .btn-contacto:hover {
   background-color: #009e88;
 }
-.btn-whatsapp {
+
+.btn-wa-icon {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background-color: #25D366; /* Color oficial WhatsApp */
-  color: #ffffff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #25D366;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.btn-whatsapp:hover {
+.btn-wa-icon:hover {
   background-color: #1ebe5d;
-  transform: translateY(-1px);
+  transform: scale(1.05);
 }
 
-.icon-wa {
-  width: 20px;
-  height: 20px;
+.btn-wa-icon img {
+  width: 24px;
+  height: 24px;
 }
+
+
 
 /* === Main y Hero === */
 main {
-  height: 70vh;
+  height: 80vh;
 }
 
 main > section#hero {
