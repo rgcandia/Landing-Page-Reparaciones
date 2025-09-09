@@ -105,6 +105,8 @@ header {
   color: rgb(0, 0, 0);
 }
 
+
+
 .nav-center ul {
   display: flex;
   gap: 1.5rem;
@@ -165,16 +167,10 @@ header {
   height: 24px;
 }
 
-
-
 /* === Main y Hero === */
-main {
-  height: 80vh;
-}
-
 main > section#hero {
-  height: 100%;
-  background-image: url('./assets/imagenes/fondo1'); /* Poné la ruta real */
+  height: 80vh;
+  background-color: #000;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -184,32 +180,66 @@ main > section#hero {
   color: white;
   padding: 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🎥 Video de fondo */
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 🔳 Overlay (mejora legibilidad del texto sobre el video) */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* 📝 Contenido sobre el video */
+#hero h2,
+#hero p,
+#hero .btn-cta {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
 #hero h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 8px rgba(0,0,0,0.7);
 }
 
 #hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
-  max-width: 600px;
-  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  max-width: 700px;
 }
 
 .btn-cta {
   background-color: #00796b;
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
 }
 
 .btn-cta:hover {
   background-color: #005a4f;
+  transform: translateY(-3px);
 }
-
