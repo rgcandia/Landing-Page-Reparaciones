@@ -452,6 +452,20 @@ footer a:hover {
     gap: 1rem;
   }
 
+  /*oferta*/
+.oferta {
+    font-size: 0.8rem; /* reduce tamaño de texto */
+    padding: 0.5rem;    /* ajusta padding si querés */
+  }
+
+  .oferta p {
+    font-size: 0.8rem; /* o menor si querés */
+  }
+
+  .link-cupon {
+    font-size: 0.75rem; /* también más pequeño en móviles */
+    padding: 0.2rem 0.5rem;
+  }
   /* HERO */
   #hero h2 {
     font-size: 2rem;
