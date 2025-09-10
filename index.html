@@ -2,16 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <!-- SEO Básico -->
-  <title>Doctor House | Reparaciones de Hogar en [Tu Ciudad] - Electricidad, Plomería y Más</title>
-  <meta name="description" content="Doctor House ofrece reparaciones profesionales en [Tu Ciudad]: electricidad, plomería, albañilería, aire acondicionado, pintura y más. Atención rápida, confiable y a domicilio.">
+  <title>Doctor House | Reparaciones de Hogar en Buenos Aires - Electricidad, Plomería y Más</title>
+  <meta name="description" content="Doctor House ofrece reparaciones profesionales en Buenos Aires: electricidad, plomería, albañilería, aire acondicionado, pintura y más. Atención rápida, confiable y a domicilio.">
   <meta name="keywords" content="Doctor House, reparaciones, electricidad, plomería, albañilería, aire acondicionado, pintura, técnico, mantenimiento, servicio a domicilio, [Tu Ciudad]">
   <meta name="author" content="Doctor House - Reparaciones Integrales">
 
   <!-- Open Graph (para redes sociales) -->
-  <meta property="og:title" content="Doctor House | Reparaciones a Domicilio en [Tu Ciudad]">
+  <meta property="og:title" content="Doctor House | Reparaciones a Domicilio en Buenos Aires">
   <meta property="og:description" content="Solucionamos todo en tu hogar: electricidad, plomería, albañilería, pintura y más. Técnico de confianza en [Tu Ciudad].">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.doctorhouse.com">
@@ -145,10 +145,12 @@
   const btn = document.getElementById("hamburguesa-btn");
   const menu = document.getElementById("nav-menu");
 
-  btn.addEventListener("click", () => {
-    btn.classList.toggle("activa");
-    menu.classList.toggle("active");
-  });
+btn.addEventListener("click", () => {
+  btn.classList.toggle("activa");
+  menu.classList.toggle("active");
+  btn.setAttribute("aria-expanded", btn.classList.contains("activa"));
+});
+
 </script>
 
 </body>

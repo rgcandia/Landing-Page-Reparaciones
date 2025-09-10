@@ -79,7 +79,7 @@ header {
 }
 
 .link-cupon {
-  color: var(--color-1); /* celeste grisáceo claro */
+  color: var(--color-1); 
   font-weight: 600;
   margin-left: 1rem;
   display: inline-block;
@@ -116,6 +116,7 @@ header {
   gap: 1rem;
   background-color: #fff; /* Fondo claro o usa tu color preferido */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative; /* para que nav-center absolute se posicione relativo a esto */
 }
 
 
