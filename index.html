@@ -22,6 +22,7 @@
 
   <!-- CSS -->
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -41,19 +42,28 @@
 
   <!-- Navegación -->
   <nav class="nav-grid">
-<div class="nav-left">Doctor House</div>
+<div class="nav-left">
+  <a href="#" class="logo-text">Doctor House</a>
+</div>
 
-    <div class="nav-center">
-      <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
+   <div class="nav-center" id="nav-menu">
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</div>
+
 <div class="nav-right">
-  <a href="https://wa.me/5491123456789" class="btn-wa-icon" target="_blank" rel="noopener">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
+
+  <!-- Botón de menú hamburguesa -->
+<button class="hamburguesa" id="hamburguesa-btn" aria-label="Menú">
+  <span class="linea"></span>
+  <span class="linea"></span>
+  <span class="linea"></span>
+</button>
+
+
 </div>
 
 
@@ -71,9 +81,9 @@
   </video>
 
   <!-- Contenido encima del video -->
-  <h2>Solucionamos tus problemas del hogar, rápido y bien hecho</h2>
-  <p>Reparaciones de electricidad, plomería, albañilería, aire acondicionado, pintura y más en [Tu Ciudad].</p>
-  <a href="#contacto" class="btn-cta">¡Solicita tu reparación ahora!</a>
+  <h2>Servicios profesionales para el hogar, disponibles las 24 horas</h2>
+  <p>Atendemos urgencias y trabajos programados de plomería, electricidad, albañilería, aire acondicionado, pintura y más. Disponibles 24/7, los 365 días del año en Buenos Aires.</p>
+  <a href="#contacto" class="btn-cta">Contáctanos ahora</a>
 </section>
 
     <!-- Servicios -->
@@ -124,5 +134,22 @@
   <script src="script.js">
  
   </script>
+  
+
+<!-- Whatsapp-->
+<a href="https://wa.me/5491124174863" class="wa-float" target="_blank" rel="noopener">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<script>
+  const btn = document.getElementById("hamburguesa-btn");
+  const menu = document.getElementById("nav-menu");
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("activa");
+    menu.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
