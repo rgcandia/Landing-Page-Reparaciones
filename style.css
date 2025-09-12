@@ -120,28 +120,26 @@ header {
 }
 
 
-/* === Nav Left === */
+/* === NAV LEFT === */
 .nav-left {
+  display: flex;
+  align-items: center;
   justify-self: start;
 }
+
 .nav-left img {
-  height: 100px; /* Ajustá según tu logo */
+  height: 80px;
   width: auto;
   display: block;
+  max-height: 100%;
 }
-/* === Logo de texto temporal (Doctor House) === */
-.logo-text {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif; /* O cualquier otra profesional */
-  color: var(--color-1);
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
+
+/* === Animación del logo (imagen o texto) === */
+.fade-in {
   animation: fadeSlideIn 1s ease-in-out;
 }
 
-/* 🎞️ Animación de entrada */
+/* === Animación keyframes === */
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -152,8 +150,6 @@ header {
     transform: translateY(0);
   }
 }
-
-
 
 /* === Nav Center === */
 .nav-center ul {
@@ -437,14 +433,9 @@ footer a:hover {
     text-align: center;
   }
 
-  .nav-left {
-    grid-area: left;
-    justify-self: start;
-  }
   .nav-left img {
-  height: 50px; /* Ajustá según tu logo */
-  align-items: center;
-}
+    height: 80px;
+  }
 
   .nav-right {
     grid-area: right;
