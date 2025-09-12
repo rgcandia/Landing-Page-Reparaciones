@@ -441,6 +441,10 @@ footer a:hover {
     grid-area: left;
     justify-self: start;
   }
+  .nav-left img {
+  height: 50px; /* Ajustá según tu logo */
+  align-items: center;
+}
 
   .nav-right {
     grid-area: right;
