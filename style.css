@@ -124,6 +124,11 @@ header {
 .nav-left {
   justify-self: start;
 }
+.nav-left img {
+  height: 100px; /* Ajustá según tu logo */
+  width: auto;
+  display: block;
+}
 /* === Logo de texto temporal (Doctor House) === */
 .logo-text {
   font-size: 2rem;
