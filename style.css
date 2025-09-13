@@ -242,7 +242,7 @@ main > section#hero {
 }
 
 /* 📝 Contenido sobre el video */
-#hero h2,
+#hero h1,
 #hero p,
 #hero .btn-cta {
   position: relative;
@@ -250,7 +250,7 @@ main > section#hero {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
-#hero h2 {
+#hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
