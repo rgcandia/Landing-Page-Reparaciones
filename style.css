@@ -86,7 +86,7 @@ header {
   padding: 0.3rem 0.6rem;
   border: 1px solid var(--color-link);
   border-radius: 4px;
-  background-color:  var(--color-link);
+  background-color:  white;
   transition: all 0.3s ease;
   text-decoration: none;
   animation: pulsoCupon 1.5s infinite ease-in-out;
@@ -314,31 +314,52 @@ main > section#hero {
   color: var(--color-acento);
 }
 
+
 /* === Sección: Sobre Nosotros === */
 #sobre-nosotros {
-  background-color: var(--color-acento-claro);
+  background-color: #ffffff; /* Fondo blanco */
   padding: 4rem 2rem;
-  text-align: center;
 }
 
-#sobre-nosotros h2 {
+.contenedor-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo-nosotros img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.texto-nosotros {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.texto-nosotros h2 {
   font-size: 2.4rem;
-  margin-bottom: 2rem;
   color: var(--color-1);
   font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-#sobre-nosotros p {
-  max-width: 800px;
-  margin: 0 auto;
+.texto-nosotros p {
   font-size: 1.2rem;
-  color: var(--color-2);
   line-height: 1.8;
+  color: var(--color-2);
 }
+
 
 /* === Sección: Contacto === */
 #contacto {
-  background-color: #fff;
+  background-color:var(--color-5);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -366,6 +387,7 @@ main > section#hero {
   display: grid;
   gap: 1.2rem;
   text-align: left;
+  
 }
 
 #contacto label {
@@ -385,8 +407,9 @@ main > section#hero {
 }
 
 #contacto button[type="submit"] {
-  background-color: var(--color-acento);
+background-color: var(--color-3);
   color: #fff;
+  max-width: 200px;
   padding: 0.9rem 1.5rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -394,10 +417,15 @@ main > section#hero {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
+  /* ✅ Centro el botón */
+  margin: 0 auto;
+  display: block;
 }
 
+
 #contacto button[type="submit"]:hover {
-  background-color: var(--color-3);
+  
   transform: translateY(-2px);
 }
 
@@ -553,7 +581,7 @@ footer a:hover {
   #contacto button[type="submit"] {
     font-size: 1rem;
     padding: 0.9rem;
-    background-color: var(--color-acento);
+  background-color: var(--color-3);
     color: white;
     border: none;
     border-radius: 4px;
@@ -571,7 +599,7 @@ footer a:hover {
     font-size: 0.9rem;
     padding: 2rem 1rem;
     text-align: center;
-    background-color: var(--color-5);
+  
     color: var(--color-1);
   }
 
@@ -798,7 +826,7 @@ footer a:hover {
 
   .servicio-icono {
     width: 50px;
-    height: 50px;
+    height: px;
   }
 
   .servicio-card h3 {
