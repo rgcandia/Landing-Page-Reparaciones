@@ -79,12 +79,12 @@ header {
 }
 
 .link-cupon {
-  color: var(--color-1); 
-  font-weight: 600;
+   color: var(--color-1); /* negro intenso */
+  font-weight: 500;
   margin-left: 1rem;
   display: inline-block;
   padding: 0.3rem 0.6rem;
-  border: 1px solid var(--color-link);
+
   border-radius: 4px;
   background-color:  white;
   transition: all 0.3s ease;
@@ -93,8 +93,8 @@ header {
 }
 
 .link-cupon:hover {
-  background-color: var(--color-link);
-  color: var(--color-1); /* negro intenso */
+  
+
   animation: none; /* detener el pulso en hover */
 }
 
