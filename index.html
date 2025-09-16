@@ -158,24 +158,32 @@
 </section>
 
 
-    <!-- Contacto -->
-    <section id="contacto">
-      <h2>Contactanos</h2>
-      <p>Completá el siguiente formulario o escribinos por WhatsApp. Te respondemos al instante.</p>
-      <form action="mailto:fernandojuancruzramazotti@gmail.com" method="POST" enctype="text/plain">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+<!-- Contacto -->
+<section id="contacto">
+  <h2>Contactanos</h2>
+  <p>Completá el siguiente formulario o escribinos por WhatsApp. Te respondemos al instante.</p>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+  <form action="https://formsubmit.co/fernandojuancruzramazotti@gmail.com" method="POST" autocomplete="on">
+    
+    <!-- Desactiva el captcha de Formsubmit (opcional) -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    <!-- Redirige a una página de gracias (opcional) -->
+    <!-- <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> -->
 
-        <button type="submit">Enviar mensaje</button>
-      </form>
-    </section>
-  </main>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required autocomplete="name">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required autocomplete="tel">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required autocomplete="off"></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
 
   <!-- Footer -->
   <footer>
