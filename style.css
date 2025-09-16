@@ -606,7 +606,7 @@ footer a:hover {
   }
 
   footer a {
-    color: var(--color-3);
+    color: var(--color-5);
     text-decoration: underline;
   }
 }
