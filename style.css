@@ -406,7 +406,7 @@ main > section#hero {
 
 #contacto button[type="submit"] {
 background-color: var(--color-3);
-  color: #fff;
+ color: var(--color-5);
   max-width: 200px;
   padding: 0.9rem 1.5rem;
   font-size: 1.1rem;
@@ -423,7 +423,7 @@ background-color: var(--color-3);
 
 
 #contacto button[type="submit"]:hover {
-  
+  background-color: var(--color-2);
   transform: translateY(-2px);
 }
 
