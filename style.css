@@ -20,7 +20,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -108,15 +108,15 @@ header {
 
 /* === Nav Grid === */
 .nav-grid {
+  position: relative; /* <-- importante */
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 1rem 2rem;
   gap: 1rem;
   background-color: #fff;
-
+  box-shadow: inset 0 0 10px rgba(214, 53, 53, 0.2);
 }
-
 
 
 /* === NAV LEFT === */
@@ -279,7 +279,7 @@ main > section#hero {
 
 /* === Sección: Servicios === */
 #servicios {
-  background-color: var(--color-3); /* fondo gris claro */
+  background-color: var(--color-3); 
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -289,6 +289,7 @@ main > section#hero {
   margin-bottom: 2rem;
   color: var(--color-1);
   font-weight: 700;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
 #servicios ul {
@@ -748,6 +749,7 @@ footer a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: white;
+  
 }
 
 /* === Grid de tarjetas de servicio === */
