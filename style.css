@@ -81,12 +81,12 @@ header {
 }
 
 .link-cupon {
-   color: var(--color-1); /* negro intenso */
+   color:var(--color-1); 
   margin-left: 1rem;
   display: inline-block;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  background-color:  white;
+  background-color: white;
   transition: all 0.3s ease;
   text-decoration: none;
   animation: pulsoCupon 1.5s infinite ease-in-out;
@@ -94,8 +94,6 @@ header {
 }
 
 .link-cupon:hover {
-  
-
   animation: none; /* detener el pulso en hover */
 }
 
