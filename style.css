@@ -31,6 +31,7 @@ body {
   color: var(--color-1);
   background-color: var(--color-5);
   height: 100%;
+  
 
 }
 
@@ -70,7 +71,7 @@ header {
 
 .oferta p {
   margin: 0;
-  color: var(--color-5); /* texto claro, suave y legible */
+  color: white;
   font-weight: 400;
 }
 
@@ -89,6 +90,7 @@ header {
   transition: all 0.3s ease;
   text-decoration: none;
   animation: pulsoCupon 1.5s infinite ease-in-out;
+  
 }
 
 .link-cupon:hover {
@@ -115,7 +117,8 @@ header {
   padding: 1rem 2rem;
   gap: 1rem;
   background-color: #fff;
-  box-shadow: inset 0 0 10px rgba(214, 53, 53, 0.2);
+  box-shadow: inset 0 0 10px rgba(5, 5, 5, 0.5);
+  
 }
 
 
@@ -209,7 +212,7 @@ main > section#hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--color-5);
+  color: white;
   padding: 2rem;
   text-align: center;
   position: relative;
@@ -246,6 +249,7 @@ main > section#hero {
 #hero .btn-cta {
   position: relative;
   z-index: 2;
+  color: white;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
@@ -319,6 +323,8 @@ main > section#hero {
 #sobre-nosotros {
   background-color: #ffffff; /* Fondo blanco */
   padding: 4rem 2rem;
+  box-shadow: inset 0 0 10px rgba(5, 5, 5, 0.2);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor-nosotros {
@@ -359,56 +365,70 @@ main > section#hero {
 
 /* === Sección: Contacto === */
 #contacto {
-  background-color:var(--color-5);
+  background-color: var(--color-3); 
   padding: 4rem 2rem;
   text-align: center;
+  color: #f0f0f0;
+   text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 }
 
 #contacto h2 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
-  color: var(--color-1);
+  color:white;
   font-weight: 700;
+  
+  
 }
 
 #contacto p {
   font-size: 1.1rem;
-  color: var(--color-2);
+  color:white;
   margin-bottom: 2rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Formulario */
+/* === Formulario === */
 #contacto form {
   max-width: 600px;
   margin: 0 auto;
   display: grid;
   gap: 1.2rem;
   text-align: left;
-  
 }
 
 #contacto label {
   font-weight: 500;
-  color: var(--color-1);
+  color: #f0f0f0;
+  font-size: 1rem;
 }
 
+/* Inputs y textarea */
 #contacto input,
 #contacto textarea {
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--color-4);
+  padding: 0.8rem 1rem;
+  border: 1px solid #444; 
   border-radius: 5px;
-  background-color:  #ffffff;
+  background-color: #ffffff; 
   font-size: 1rem;
   color: var(--color-1);
+  transition: border 0.3s ease, background-color 0.3s ease;
 }
 
+#contacto input:focus,
+#contacto textarea:focus {
+  outline: none;
+  border-color: var(--color-1); /* naranja coral */
+  
+}
+
+/* Botón enviar */
 #contacto button[type="submit"] {
-background-color: var(--color-3);
- color: var(--color-5);
+  background-color:white;
+  color: #080808;
   max-width: 200px;
   padding: 0.9rem 1.5rem;
   font-size: 1.1rem;
@@ -417,21 +437,18 @@ background-color: var(--color-3);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-
-  /* ✅ Centro el botón */
   margin: 0 auto;
   display: block;
 }
 
-
 #contacto button[type="submit"]:hover {
-  background-color: var(--color-2);
   transform: translateY(-2px);
 }
 
+
 /* === Footer === */
 footer {
-  background-color: var(--color-3);
+  background-color: var(--color-1);
   color: var(--color-5);
   text-align: center;
   padding: 2rem 1rem;
