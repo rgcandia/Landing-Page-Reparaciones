@@ -31,6 +31,7 @@ body {
   color: var(--color-1);
   background-color: var(--color-5);
   height: 100%;
+
 }
 
 ul,
@@ -112,10 +113,10 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   gap: 1rem;
-  background-color: #fff; /* Fondo claro o usa tu color preferido */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  position: relative; /* para que nav-center absolute se posicione relativo a esto */
+  background-color: #fff;
+
 }
+
 
 
 /* === NAV LEFT === */
@@ -278,7 +279,7 @@ main > section#hero {
 
 /* === Sección: Servicios === */
 #servicios {
-  background-color: var(--color-5); /* fondo gris claro */
+  background-color: var(--color-3); /* fondo gris claro */
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -736,7 +737,7 @@ footer a:hover {
 
 /* === Servicios === */
 #servicios {
-  background-color: var(--color-5);
+  background-color: var(--color-3);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -746,7 +747,7 @@ footer a:hover {
   margin-bottom: 3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: var(--color-1);
+  color: white;
 }
 
 /* === Grid de tarjetas de servicio === */
@@ -847,3 +848,7 @@ footer a:hover {
     grid-template-rows: auto;
   }
  }
+
+
+
+ /*Separadores*/
