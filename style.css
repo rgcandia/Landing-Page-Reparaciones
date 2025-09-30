@@ -135,22 +135,7 @@ header {
   max-height: 100%;
 }
 
-/* === Animación del logo (imagen o texto) === */
-.fade-in {
-  animation: fadeSlideIn 1s ease-in-out;
-}
 
-/* === Animación keyframes === */
-@keyframes fadeSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* === Nav Center === */
 .nav-center ul {
@@ -485,7 +470,9 @@ footer a:hover {
   }
 
   .nav-left img {
-    height: 50px;
+    height: 60px;
+    transform: scale(1.4); /* hace zoom visual */
+    transform-origin: center;
   }
 
   .nav-right {
